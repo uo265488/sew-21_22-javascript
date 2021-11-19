@@ -1,0 +1,100 @@
+/*Especificidad: 001 */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  
+  /*Especificidad: 001 */
+  section {
+    background-color: #0a5a71;
+    color: white;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /*Especificidad: 001 */
+  header {
+    color: #fff;
+    background-color: #0a5a71;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /*Especificidad: 003 */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #fff;
+    background-color: #0a5a71;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  /*Especificidad: 001 */
+  p {
+    color: #fff;
+    background-color: #a02818;
+    text-align: center;
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  
+  /*Especificidad: 001 */
+  table,
+  th,
+  td {
+    color: #fff;
+    background-color: #a02818;
+    text-align: center;
+    border: 1px solid black;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    padding: 1em;
+  }
+  /*Especificidad: 002 */
+  li,
+  ul {
+    color: #fff;
+    background-color: #a02818;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+    
+  /*Especificidad: 001 */
+  label {
+    color: #fff;
+    background-color: #a02818;
+  
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  /*Especificidad: 001 */
+  a {
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+  }
+  /*Especificidad: 001 */
+  fieldset {
+    padding: 2em;
+  }
+  /*Especificidad: 001 */
+  input {
+    margin-bottom: 1em;
+    background-color:  #a02818;
+    padding: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    color: white;
+  }
+  
+  
