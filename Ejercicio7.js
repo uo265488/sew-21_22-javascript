@@ -36,9 +36,7 @@ class GestorWeb {
 
     traducirTituloEspañol() {
         $("#titulo").text("Bill Gates, uno de los mayores contribuyentes a la informática:");
-    }
-
-    
+    }   
 }
 
 var gestor = new GestorWeb();
