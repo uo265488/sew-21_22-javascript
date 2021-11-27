@@ -2,49 +2,62 @@ class CalculadoraCientifica extends Calculadora {
     
     constructor() {
         super();
+        this.activateKeyEvents();
         this.radianes = true;
         this.hyperbolic = false;
         this.isNotacionCientifica = false;
     }
 
+    activateKeyEvents() {
+        super.activateKeyEvents();
+        
+    }
+
     deg() {
-        if ( this.isValidFormat()) {
+        super.igual();
+        if (String(super.getPantalla()) != String("")) {
             this.igual();
             if(this.radianes) {
-                super.pantalla = (eval(this.pantalla)) / ((Math.PI) / 180);
+                super.pantalla = (eval(super.getPantalla())) / ((Math.PI) / 180);
                 super.showPantalla();
                 this.radianes = false;
-                document.getElementById("RadDeg").value = "RAD";
+                document.querySelector('input[value="DEG"]').value = "RAD";
             } else {
-                super.pantalla = (eval(this.pantalla)) * ((Math.PI) / 180);
+                super.pantalla = (eval(super.getPantalla())) * ((Math.PI) / 180);
                 super.showPantalla();
                 this.radianes = true;
-                document.getElementById("RadDeg").value = "DEG";
+                document.querySelector('input[value="RAD"]').value = "DEG";
             }
         }
     }
 
     hyp() {
         if(this.hyperbolic) {
-            document.getElementById("sen").value = "sen";
-            document.getElementById("cos").value = "cos";
-            document.getElementById("tan").value = "tan";
+            document.querySelector('input[value="sinh"]').value = "sin";
+            document.querySelector('input[value="cosh"]').value = "cos";
+            document.querySelector('input[value="tanh"]').value = "tan";
             this.hyperbolic = false;
         } else {
-            document.getElementById("sen").value = "senh";
-            document.getElementById("cos").value = "cosh";
-            document.getElementById("tan").value = "tanh";
+            document.querySelector('input[value="sin"]').value = "sinh";
+            document.querySelector('input[value="cos"]').value = "cosh";
+            document.querySelector('input[value="tan"]').value = "tanh";
             this.hyperbolic = true;
         }
     }
 
     FE() {
-        if(!this.isNotacionCientifica) {
-            this.pantalla = Number(this.pantalla).toExponential().replace(/e\+?/, ' x 10^');
-            document.getElementById("pantalla").
-            this.isNotacionCientifica = true;
-        } else {
-            alert('Falta implementar. ');
+        super.igual();
+        if (String(super.getPantalla()) != String("")) {
+            if(!this.isNotacionCientifica) {
+                super.setPantalla(eval(String(super.getPantalla())).toExponential().replace(/e\+?/, ' x 10^'));
+                super.showPantalla();
+                this.isNotacionCientifica = true;
+            } else {
+                super.setPantalla(Number(super.getPantalla()));
+                super.igual();
+                super.showPantalla();
+                this.isNotacionCientifica = !this.isNotacionCientifica;
+            }
         }
     }
 
@@ -66,105 +79,136 @@ class CalculadoraCientifica extends Calculadora {
 
     MS() {
         this.igual();
-        super.memory = Number(this.pantalla);
+        super.memory = Number(super.pantalla);
     }
 
     cuadrado() {
-        this.pantalla += '**2';
+        super.setPantalla(super.getPantalla() + '**2');
         super.showPantalla();
     }
 
     elevadoY() {
-        this.pantalla += '**';
+        super.setPantalla(super.getPantalla() + '**');
         super.showPantalla();
     }
 
     sin() {
-        if (this.hyperbolic) {
-            this.pantalla += 'senh(';
-            super.showPantalla();
-        } else {
-            this.pantalla += 'sen(';
-            super.showPantalla();
+        super.igual();
+        if (String(super.getPantalla()) != String("")) {
+            if (this.hyperbolic) {
+                super.setPantalla(String(Math.sinh(eval(super.getPantalla()))));
+                super.showPantalla();
+            } else {
+                super.setPantalla(String(Math.sin(eval(super.getPantalla()))));
+                super.showPantalla();
+            }
         }
     }
 
     cos() {
-        if (this.hyperbolic) {
-            this.pantalla += 'cosh(';
-            super.showPantalla();
-        } else {
-            this.pantalla += 'cos(';
-            super.showPantalla();
+        super.igual();
+        if (String(super.getPantalla()) != String("")) {
+            if (this.hyperbolic) {
+                super.setPantalla(String(Math.cosh(eval(super.getPantalla()))));
+                super.showPantalla();
+            } else {
+                super.setPantalla(String(Math.cos(eval(super.getPantalla()))));
+                super.showPantalla();
+            }
         }
     }
 
     tan() {
-        if (this.hyperbolic) {
-            this.pantalla += 'tanh(';
-            super.showPantalla();
-        } else {
-            this.pantalla += 'tan(';
-            super.showPantalla();
+        super.igual();
+        if (String(super.getPantalla()) != String("")) {
+            if (this.hyperbolic) {
+                super.setPantalla(String(Math.tanh(eval(super.getPantalla()))));
+                super.showPantalla();
+            } else {
+                super.setPantalla(String(Math.tan(eval(super.getPantalla()))));
+                super.showPantalla();
+            }
         }
     }
 
     raiz() {
-        this.pantalla += '√';
-        super.showPantalla();
+        if (String(super.getPantalla()) != String("")) {
+
+            super.setPantalla(String(Math.sqrt(eval(super.getPantalla()))));
+            super.showPantalla();
+        }
+
     }
 
     potenciaBase10() {
-        this.pantalla += '10**';
+        super.setPantalla(super.getPantalla() + '+10**');
         super.showPantalla();
     }
 
     log() {
-        this.pantalla += 'log(';
-        super.showPantalla();
+        super.igual();
+        if (String(super.getPantalla()) != String("")) {
+            super.setPantalla(Math.log(eval(super.getPantalla())));
+            super.showPantalla();
+        }
+        
     }
 
     Exp() {
-        this.pantalla += 'e';
+        super.setPantalla(String(super.getPantalla()) + 'e');
         super.showPantalla();
     }
 
     mod() {
-        this.pantalla += '%';
+        super.setPantalla(super.getPantalla() + '%');
         super.showPantalla();
     }
 
     flechaArriba() {
-
+        alert('Esta funcionalidad está pendiente de desarrollo.');
     }
 
     CE() {
-        this.pantalla = "";
+        super.setPantalla("");
         super.showPantalla();
     }
 
     C() {
-        this.pantalla = String(this.pantalla).substr(0, String(this.pantalla).length - 1);
-        super.showPantalla();
+        super.borrar();
+    }
+
+    borrar() {
+        super.borrar();
     }
 
     pi() {
-        this.pantalla += "pi";
+        super.setPantalla(super.getPantalla() + Math.PI.toString());
         super.showPantalla();
     }
 
     factorial() {
-        this.pantalla += "!";
-        super.showPantalla();
+        super.igual();
+        if (String(super.getPantalla()) != String("")) {
+            var sum = 1;
+            var num = eval(super.getPantalla());
+            while(num > 1) {
+                sum *= num;
+                num --;
+            }
+    
+            super.setPantalla(String(sum));
+            this.showPantalla();
+        }
+        
     }
 
     abreParentesis() {
-        this.pantalla += "(";
+        super.setPantalla(super.getPantalla() + "(");
         super.showPantalla();
     }
 
     cierraParentesis() {
-        this.pantalla += ")";
+        super.setPantalla(super.getPantalla() + ")");
         super.showPantalla();
     }
 
@@ -176,6 +220,14 @@ class CalculadoraCientifica extends Calculadora {
         return super.isValidFormat();
     }
 
+    masmenos() {
+        this.igual();
+        if (String(super.getPantalla()) != "") {
+            super.setPantalla(eval(super.getPantalla()) * -1);
+            super.showPantalla();
+        }
+        
+    }
 }
 
 var calculadoraCientifica = new CalculadoraCientifica();
