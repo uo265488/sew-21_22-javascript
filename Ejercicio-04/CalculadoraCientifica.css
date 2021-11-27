@@ -23,7 +23,13 @@ input[type="text"] {
   padding: 1em;
   text-align: right;
 }
-
+/** especificidad (0,1,1) **/
+button {
+  color: black;
+  background-color: darkgray;
+  padding: 1em;
+  border: none;
+}
 /** especificidad (0,1,1) **/
 input[type="button"] {
   color: black;
