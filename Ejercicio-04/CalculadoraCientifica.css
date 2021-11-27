@@ -29,7 +29,9 @@ button {
   background-color: darkgray;
   padding: 1em;
   border: none;
-  content-visibility: hidden;
+}
+input[type="button"][value="No value"] {
+  font-size: 0em;
 }
 /** especificidad (0,1,1) **/
 input[type="button"] {
