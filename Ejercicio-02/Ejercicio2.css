@@ -7,12 +7,15 @@ body {
 h1 {
   /*text-align:center;*/
   color: red;
+  background-color: white;
 }
 /* Especificidad 001*/
 h2 {
   color: blue;
+  background-color: white;
 }
 /* Especificidad 001*/
 p {
-  color: gray;
+  color: green;
+  background-color: white;
 }
