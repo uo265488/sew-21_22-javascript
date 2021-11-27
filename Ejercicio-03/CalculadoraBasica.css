@@ -10,7 +10,7 @@ h1 {
 }
 label {
   color: transparent;
-  background-color: #2b2b2b;
+  background-color: white;
 }
 /** especificidad (0,0,1) **/
 form {
