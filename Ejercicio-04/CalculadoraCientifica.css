@@ -3,8 +3,8 @@ form {
   display: grid;
   grid-template-columns: 4em 4em 4em 4em 4em;
   padding: 2em;
-  row-gap: 0.1em;
-  column-gap: 0.1em;
+  row-gap: 0.5em;
+  column-gap: 0.5em;
 }
 label {
   visibility: hidden;
