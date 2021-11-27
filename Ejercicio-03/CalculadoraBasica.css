@@ -18,7 +18,7 @@ form {
   grid-template-columns: 4em 4em 4em 4em;
   column-gap: 1em;
   row-gap: 1em;
-  color: white;
+  color: transparent;
   background-color: #2b2b2b;
   padding: 2em;
   border-radius: 1em;
