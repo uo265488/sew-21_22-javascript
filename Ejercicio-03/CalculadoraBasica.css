@@ -52,6 +52,7 @@ input[value="m-"] {
 }
 input[type="submit"] {
   background: transparent;
+  color: transparent;
   border: none !important;
   font-size: 0;
 }
