@@ -11,6 +11,7 @@ h1 {
 label {
   color: transparent;
   background-color: white;
+  display: none;
 }
 /** especificidad (0,0,1) **/
 form {
