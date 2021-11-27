@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculadora Básica</title>
+
+    <script src="CalculadoraBasica.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css" />
+</head>
+<body>
+    <h1> 
+        Calculadora Básica:
+    </h1>
+    
+    <form> 
+
+        <label for="pantalla" value="Label"> </label>
+
+        <input type="text" id="pantalla" name="name" disabled>
+
+        <input type="button" value="mrc" onClick = calculadora.mrc()>
+
+        <input type="button" value="m-" onClick = calculadora.mMenos()>
+
+        <input type="button" value="m+" onClick = calculadora.mMas()>
+
+        <input type="button" value="/" onClick = calculadora.division() accesskey="/">
+
+        <input type="button" value="7" onClick = calculadora.digitos(7) accesskey="7">
+
+        <input type="button" value="8" onClick = calculadora.digitos(8) accesskey="8">
+
+        <input type="button" value="9" onClick = calculadora.digitos(9) accesskey="9">
+
+        <input type="button" value="*" onClick = calculadora.multiplicacion() accesskey="*">
+
+        <input type="button" value="4" onClick = calculadora.digitos(4) accesskey="4">
+
+        <input type="button" value="5" onClick = calculadora.digitos(5) accesskey="5">
+
+        <input type="button" value="6" onClick = calculadora.digitos(6) accesskey="6">
+
+        <input type="button" value="-" onClick = calculadora.resta() accesskey="-">
+
+        <input type="button" value="1" onClick = calculadora.digitos(1) accesskey="1">
+
+        <input type="button" value="2" onClick = calculadora.digitos(2) accesskey="2">
+
+        <input type="button" value="3" onClick = calculadora.digitos(3) accesskey="3">
+
+        <input type="button" value="+" onClick= calculadora.suma() accesskey="+">
+
+        <input type="button" value="0" onClick = calculadora.digitos(0) accesskey="0">
+
+        <input type="button" value="." onClick = calculadora.punto() accesskey=".">
+
+        <input type="button" value="C" onClick = calculadora.borrar() accesskey="c">
+
+        <input type="button" value="=" onClick = calculadora.igual() accesskey=Keycode.13>
+
+        <input type="submit" value="invisible" disabled>
+
+    </form>
+
+</body>
+</html>
