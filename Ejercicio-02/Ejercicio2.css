@@ -1,0 +1,18 @@
+/* Especificidad 001*/
+body {
+  background-color: white;
+  color: black;
+}
+/* Especificidad 001*/
+h1 {
+  /*text-align:center;*/
+  color: red;
+}
+/* Especificidad 001*/
+h2 {
+  color: blue;
+}
+/* Especificidad 001*/
+p {
+  color: gray;
+}
