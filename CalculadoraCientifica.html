@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculadora Científica</title>
+
+    <script src="CalculadoraBasica.js"></script>
+    <script src="CalculadoraCientifica.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css" />
+</head>
+<body>
+    <h1> 
+        Calculadora Científica:
+    </h1>
+    
+    <form> 
+
+        <label for="pantalla">Label para el formulario</label>
+
+        <input type="text" id="pantalla" name="name"  disabled>
+
+        <input type="button" value="DEG" onClick = calculadoraCientifica.deg()>
+
+        <input type="button" value="HYP" onClick = calculadoraCientifica.hyp() >
+
+        <input type="button" value="F-E" onClick = calculadoraCientifica.FE()>
+
+        <input type="button" value="No value">
+
+        <input type="button" value="No value">
+
+        <input type="button" value="MC" onClick = calculadoraCientifica.MC()>
+
+        <input type="button" value="MR" onClick = calculadoraCientifica.MR()>
+
+        <input type="button" value="M+" onClick = calculadoraCientifica.mMas()>
+
+        <input type="button" value="M-" onClick = calculadoraCientifica.mMenos()>
+
+        <input type="button" value="MS" onClick = calculadoraCientifica.MS(6)>
+
+        <input type="button" value="x&#178;" onClick = calculadoraCientifica.cuadrado() >
+
+        <input type="button" value="x&#7518;" onClick = calculadoraCientifica.elevadoY() >
+
+        <input type="button" value="sin" onClick = calculadoraCientifica.sin()>
+
+        <input type="button" value="cos" onClick = calculadoraCientifica.cos()>
+
+        <input type="button" value="tan" onClick= calculadoraCientifica.tan()>
+
+        <input type="button" value="√" onClick = calculadoraCientifica.raiz() >
+
+        <input type="button" value="10&#7521;" onClick = calculadoraCientifica.potenciaBase10() >
+
+        <input type="button" value="log" onClick = calculadoraCientifica.log() >
+
+        <input type="button" value="Exp" onClick = calculadoraCientifica.Exp() >
+
+        <input type="button" value="Mod" onClick = calculadoraCientifica.mod()>
+
+        <input type="button" value="↑" onClick = calculadoraCientifica.flechaArriba()>
+
+        <input type="button" value="CE" onClick = calculadoraCientifica.CE()>
+
+        <input type="button" value="C" onClick = calculadoraCientifica.C() >
+
+        <input type="button" value="&#9003;" onClick = calculadoraCientifica.borrar()>
+
+        <input type="button" value="÷" onClick = calculadoraCientifica.division()>
+
+        <input type="button" value="&#960;" onClick = calculadoraCientifica.pi()>
+
+        <input type="button" value="7" onClick = calculadoraCientifica.digitos(7)>
+
+        <input type="button" value="8" onClick = calculadoraCientifica.digitos(8)>
+        
+        <input type="button" value="9" onClick = calculadoraCientifica.digitos(9)>
+
+        <input type="button" value="&#215;" onClick = calculadoraCientifica.multiplicacion()>
+
+        <input type="button" value="n!" onClick = calculadoraCientifica.factorial()>
+
+        <input type="button" value="4" onClick = calculadoraCientifica.digitos(4) >
+
+        <input type="button" value="5" onClick = calculadoraCientifica.digitos(5) >
+        
+        <input type="button" value="6" onClick = calculadoraCientifica.digitos(6)>
+
+        <input type="button" value="-" onClick = calculadoraCientifica.resta()>
+
+        <input type="button" value="&#177;" onClick = calculadoraCientifica.masmenos()>
+
+        <input type="button" value="1" onClick = calculadoraCientifica.digitos(1)>
+
+        <input type="button" value="2" onClick = calculadoraCientifica.digitos(2)>
+        
+        <input type="button" value="3" onClick = calculadoraCientifica.digitos(3)>
+
+        <input type="button" value="+" onClick = calculadoraCientifica.suma() >
+
+        <input type="button" value="(" onClick = calculadoraCientifica.abreParentesis()>
+
+        <input type="button" value=")" onClick = calculadoraCientifica.cierraParentesis() >
+
+        <input type="button" value="0" onClick = calculadoraCientifica.digitos(0) >
+
+        <input type="button" value="," onClick = calculadoraCientifica.punto() >
+
+        <input type="button" value="=" onClick = calculadoraCientifica.igual() >
+
+        <input type="submit" value="invisible" disabled>
+
+    </form>
+
+</body>
+</html>
