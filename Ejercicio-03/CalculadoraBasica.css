@@ -10,6 +10,7 @@ h1 {
 }
 label {
   display: none;
+  visibility: hidden;
 }
 /** especificidad (0,0,1) **/
 form {
