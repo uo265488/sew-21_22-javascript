@@ -45,6 +45,48 @@ class CalculadoraRPN {
     constructor() {
         this.pantalla = '';
         this.pila = new PilaLIFO();
+
+        this.activateKeyEvents();
+    }
+
+    activateKeyEvents() {
+        document.addEventListener('keydown', (event) => {
+            if ( event.key == 'Enter') {
+                this.enter();
+            } else if ( event.key == '0') {
+                this.digitos(0);
+            }  else if ( event.key == '1') {
+                this.digitos(1);
+            } else if ( event.key == '2') {
+                this.digitos(2);
+            } else if ( event.key == '3') {
+                this.digitos(3);
+            } else if ( event.key == '4') {
+                this.digitos(4);
+            } else if ( event.key == '5') {
+                this.digitos(5);
+            } else if ( event.key == '6') {
+                this.digitos(6);
+            } else if ( event.key == '7') {
+                this.digitos(7);
+            } else if ( event.key == '8') {
+                this.digitos(8);
+            } else if ( event.key == '9') {
+                this.digitos(9);
+            } else if ( event.key == 'Backspace') {
+                this.borrar();
+            } else if ( event.key == '*') {
+                this.multiplicacion();
+            } else if ( event.key == '+') {
+                this.suma();
+            } else if ( event.key == '-') {
+                this.resta();
+            } else if ( event.keyC == '.') {
+                this.punto();
+            } else if ( event.key == '/') {
+                this.division();
+            } 
+          });
     }
 
     digitos(num) {
@@ -108,7 +150,8 @@ class CalculadoraRPN {
     }
 
     CE() {
-        this.pantalla = '';
+        this.pila.desapilar();
+        this.pila.mostrar();
         this.showPantalla();
     }
 
@@ -160,7 +203,7 @@ class CalculadoraRPN {
             } else if( String(this.pantalla) == DIVISION) {
                 var operando1 = Number(this.pila.desapilar());
                 var operando2 = Number(this.pila.desapilar());
-                this.pila.apilar(String(operando1 / operando2));
+                this.pila.apilar(String(operando2 / operando1));
                 this.pila.mostrar();
             } 
             this.pila.mostrar();
@@ -195,7 +238,6 @@ class CalculadoraRPN {
         
 
     }
-
 
     isBinaryOperator() {
         return binaryOperators.indexOf(String(this.pantalla)) != -1;
