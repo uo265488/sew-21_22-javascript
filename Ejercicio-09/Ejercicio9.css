@@ -17,6 +17,7 @@ h1 {
 /*Especificidad: 001 */
 p {
   color: black;
+  background-color: white;
   padding: 1em;
   margin-left: 1em;
   margin-right: 1em;
