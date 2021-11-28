@@ -10,14 +10,14 @@ section {
   flex-direction: column;
   gap: 2em;
   align-items: center;
-  background-color: #a02818;
+  background-color: #0a5a71;
   color: #fff;
 }
 /*Especificidad: 001 */
 form {
   display: flex;
   flex-direction: row;
-  gap: 1em;
+  gap: 2em;
 }
 
 /*Especificidad: 003 */
@@ -27,7 +27,6 @@ h3,
 h4 {
   color: #fff;
   background-color: #0a5a71;
-  text-transform: uppercase;
   text-align: center;
   padding: 1em;
 }
