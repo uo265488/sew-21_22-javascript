@@ -20,13 +20,11 @@
 <body>
 
     <main>
-        <!-- Datos con el contenidos que aparece en el navegador -->
-        <section>
+        
             <h1 id="titulo">Bill Gates, uno de los mayores contribuyentes a la informática:</h1>
         
             <input type="button" value="Traducir a inglés" onClick=gestor.traducirTituloIngles() >
             <input type="button" value="Traducir a español" onClick=gestor.traducirTituloEspañol() >
-        </section>
 
         <section>
             <h2> Imagen de Bill Gates para 'El manifiesto verde':</h2>
@@ -76,29 +74,29 @@
             <table>
                 <caption> Serían los siguientes: </caption>
                 <tr>
-                    <th id="fecha">Fecha </th>
-                    <th id="logro">Logro </th>
-                    <th id="descripcion">Descripción </th>
+                    <th id="fecha" scope="col">Fecha </th>
+                    <th id="logro" scope="col">Logro </th>
+                    <th id="descripcion" scope="col">Descripción </th>
                 </tr>
                 <tr>
-                    <th id="fecha1" headers="lafecha"> 1985 </th>
+                    <th id="fecha1" headers="lafecha" scope="row"> 1985 </th>
                         <td headers="creacion"> Creación del S.O Windows</td>
                         <td headers="ElLogro"> Si por algo es bien conocido Bill Gates es por haber creado el 
                             sistema operativo Windows junto a Paul Allen.</td>
                 </tr>
                 <tr>
-                    <th id="fecha2" headers="lafecha2">1975 </th>
+                    <th id="fecha2" headers="lafecha2" scope="row">1975 </th>
                         <td headers="Popularizacion"> Popularizar el uso del ordenador personal</td>
                         <td headers="LoQueSupuso"> Marcó un antes y un después en el uso de ordenadores </td>
                 </tr>
                 <tr>
-                    <th id="fecha3" headers="lafecha3">1997 </th>
+                    <th id="fecha3" headers="lafecha3" scope="row">1997 </th>
                         <td headers="proposito">Ayudar en la salvación de Apple </td>
                         <td headers="inversion">Bill Gates invirtió 150 millones de dólares en acciones sin derecho
                             a voto de Apple cuando esta última estaba a punto de quebrar.</td>
                 </tr>
                 <tr>
-                    <th id="fecha4" headers="laFecha4">2006 </th>
+                    <th id="fecha4" headers="laFecha4" scope="row">2006 </th>
                         <td headers="fundacion"> Fundación Bill y Melinda Gates</td>
                         <td headers="seTrata"> Se trata de una iniciativa cuyo objetivo
                             es mejorar las tierras y las semillas para los agricultores en África. Ha destinado
