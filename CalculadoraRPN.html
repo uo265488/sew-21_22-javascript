@@ -1,0 +1,76 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculadora Científica</title>
+
+    <script src="CalculadoraRPN.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+</head>
+<body>
+    <h1> 
+        Calculadora Científica:
+    </h1>
+    
+    <form> 
+
+        <label for="pantalla"></label>
+
+        <textarea id="pila" name="name" rows=6   disabled></textarea>
+
+        <input type="text" id="pantalla" name="name" disabled>
+
+        <input type="button" value="sin" onClick = calculadoraRPN.sen() accesskey="2">
+
+        <input type="button" value="cos" onClick = calculadoraRPN.cos() accesskey="3">
+
+        <input type="button" value="tan" onClick= calculadoraRPN.tan() accesskey="+">
+        
+        <input type="button" value="&#9003" onClick = calculadoraRPN.borrar() accesskey="7">
+
+        <input type="button" value="asin" onClick = calculadoraRPN.asen() accesskey="2">
+
+        <input type="button" value="acos" onClick = calculadoraRPN.acos() accesskey="3">
+
+        <input type="button" value="atan" onClick= calculadoraRPN.atan() accesskey="+">
+
+        <input type="button" value="Enter" onClick = calculadoraRPN.enter() accesskey="7">     
+
+        <input type="button" value="7" onClick = calculadoraRPN.digitos(7) accesskey="7">
+
+        <input type="button" value="8" onClick = calculadoraRPN.digitos(8) accesskey="7">
+        
+        <input type="button" value="9" onClick = calculadoraRPN.digitos(9)>
+
+        <input type="button" value="÷" onClick = calculadoraRPN.division()>
+
+        <input type="button" value="4" onClick = calculadoraRPN.digitos(4) accesskey="7">
+
+        <input type="button" value="5" onClick = calculadoraRPN.digitos(5) accesskey="7">
+        
+        <input type="button" value="6" onClick = calculadoraRPN.digitos(6)>
+
+        <input type="button" value="&#215" onClick = calculadoraRPN.multiplicacion()>
+
+        <input type="button" value="1" onClick = calculadoraRPN.digitos(1) accesskey="7">
+
+        <input type="button" value="2" onClick = calculadoraRPN.digitos(2) accesskey="7">
+        
+        <input type="button" value="3" onClick = calculadoraRPN.digitos(3)>
+
+        <input type="button" value="-" onClick = calculadoraRPN.resta()>
+
+        <input type="button" value="0" onClick = calculadoraRPN.digitos(0) accesskey="/">
+
+        <input type="button" value="," onClick = calculadoraRPN.punto() accesskey="7">
+        
+        <input type="button" value="CE" onClick = calculadoraRPN.CE()>
+        
+        <input type="button" value="+" onClick = calculadoraRPN.suma() accesskey="7">
+
+        <input type="submit" value="invisible" disabled>
+
+    </form>
+
+</body>
+</html>
