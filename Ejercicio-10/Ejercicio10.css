@@ -15,11 +15,11 @@ section {
 }
 /*Especificidad: 001 */
 input {
-  font-size: large;
+  font-size: 1em;
 }
 /*Especificidad: 001 */
 button {
-  font-size: large;
+  font-size: 1em;
 }
 
 /*Especificidad: 003 */
@@ -30,7 +30,7 @@ h3 {
   background-color: #0a5a71;
   text-align: center;
   padding: 1em;
-  font-size: large;
+  font-size: 2em;
 }
 /*Especificidad: 001 */
 p {
@@ -39,7 +39,7 @@ p {
   padding: 1em;
   margin-left: 1em;
   margin-right: 1em;
-  font-size: large;
+  font-size: 2em;
 }
 /** especificidad (0,1,1) **/
 input[type="submit"] {
