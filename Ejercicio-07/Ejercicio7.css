@@ -92,10 +92,9 @@ fieldset {
 /*Especificidad: 001 */
 input {
   margin-bottom: 1em;
-  background-color:  #a02818;
+  background-color: #a02818;
   padding: 1em;
   margin-left: 2em;
   margin-right: 2em;
   color: white;
 }
-
