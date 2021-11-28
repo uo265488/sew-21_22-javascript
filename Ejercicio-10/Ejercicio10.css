@@ -13,6 +13,12 @@ section {
   background-color: #a02818;
   color: #fff;
 }
+/*Especificidad: 001 */
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
 
 /*Especificidad: 003 */
 h1,
