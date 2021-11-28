@@ -6,10 +6,12 @@ form {
   row-gap: 0.1em;
   column-gap: 0.1em;
   background-color: white;
+  color: black;
 }
 /**Especificidad (0,2,1) **/
 textarea {
   background-color: white;
+  color: black;
   grid-column-start: 1;
   grid-column-end: 5;
   resize: none;
@@ -18,6 +20,7 @@ textarea {
 /**Especificidad (0,2,1) **/
 input[type="text"] {
   background-color: white;
+  color: black;
   grid-column-start: 1;
   grid-column-end: 5;
   text-align: right;
@@ -32,6 +35,7 @@ input[type="button"] {
 /** especificidad (0,1,1) **/
 input[type="submit"] {
   background: transparent;
+  color: white;
   border: none !important;
   font-size: 0;
 }
