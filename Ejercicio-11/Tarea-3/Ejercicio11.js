@@ -38,7 +38,7 @@ class MapaEstaticoGoogle {
         return this.altitud;
     }
     verTodo(dondeVerlo){
-        var ubicacion=document.getElementById(dondeVerlo);
+        var ubicacion=document.querySelector(dondeVerlo);
         var datos='<p>'+ this.mensaje + '</p>'; 
         datos+='<p>Longitud: '+this.longitud +' grados</p>'; 
         datos+='<p>Latitud: '+this.latitud +' grados</p>';
@@ -50,7 +50,7 @@ class MapaEstaticoGoogle {
         ubicacion.innerHTML = datos;
     }
     getMapaEstaticoGoogle(dondeVerlo){
-        var ubicacion=document.getElementById(dondeVerlo);
+        var ubicacion=document.querySelector(dondeVerlo);
         
         var apiKey = "&key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU";
         //URL: obligatoriamente https
