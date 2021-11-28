@@ -1,4 +1,18 @@
+/** Especificidad 001 */
+main {
+  background-color: white;
+  color: blue;
+  font-size: 3em;
+}
+/** Especificidad 001 */
 body {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: blue;
+  font-size: 3em;
+}
+/** Especificidad 001 */
+h1 {
+  background-color: white;
+  color: blue;
+  font-size: 3em;
 }
