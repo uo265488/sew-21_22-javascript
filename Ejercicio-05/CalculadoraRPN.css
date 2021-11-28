@@ -39,3 +39,7 @@ input[type="submit"] {
   border: none !important;
   font-size: 0;
 }
+/** especificidad (0,0,1) **/
+label {
+  visibility: hidden;
+}
