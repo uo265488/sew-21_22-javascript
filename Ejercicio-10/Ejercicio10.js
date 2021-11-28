@@ -43,7 +43,7 @@ class Bitcoin {
 
                     var stringDatos = '<p id=btcPrice">Bitcoin price: ' + datos.market_data.current_price.eur + ' EUR. </p>';
                                       
-                    $("#btcPrice").html(stringDatos);
+                    $("p").html(stringDatos);
                 },
             error:function(){
                 $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
@@ -66,7 +66,7 @@ class Bitcoin {
 
                     var stringDatos = '<p id=btcPrice">Bitcoin price: ' + datos.market_data.current_price.eth + ' ETH. </p>';
                                       
-                    $("#btcPrice").html(stringDatos);
+                    $("p").html(stringDatos);
                 },
             error:function(){
                 $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
@@ -89,7 +89,7 @@ class Bitcoin {
 
                     var stringDatos = '<p id=btcPrice">Bitcoin price: ' + datos.market_data.current_price.usd + ' USD. </p>';
                                       
-                    $("#btcPrice").html(stringDatos);
+                    $("p").html(stringDatos);
                 },
             error:function(){
                 $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
@@ -112,7 +112,7 @@ class Bitcoin {
 
                     var stringDatos = '<p id=btcPrice">Bitcoin price: ' + datos.market_data.current_price.usd + ' USD. </p>';
                                       
-                    $("#btcPrice").html(stringDatos);
+                    $("p").html(stringDatos);
                 },
             error:function(){
                 $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
@@ -135,7 +135,7 @@ class Bitcoin {
 
                     var stringDatos = '<p id=btcPrice">Bitcoin price: ' + datos.market_data.current_price.bnb + ' BNB. </p>';
                                       
-                    $("#btcPrice").html(stringDatos);
+                    $("p").html(stringDatos);
                 },
             error:function(){
                 $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
@@ -156,7 +156,7 @@ class Bitcoin {
 
                     var stringDatos = '<p id=btcPrice">Bitcoin price: ' + datos.market_data.current_price.xrp + ' XRP. </p>';
                                       
-                    $("#btcPrice").html(stringDatos);
+                    $("p").html(stringDatos);
                 },
             error:function(){
                 $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
@@ -183,7 +183,7 @@ class Bitcoin {
                     stringDatos += '<li> Bitcoin porcentaje de cambio en los últimos 200 días:  ' + datos.market_data.price_change_percentage_200d + ' %</li>';
                     stringDatos += '<li> Bitcoin porcentaje de cambio en el último año:  ' + datos.market_data.price_change_percentage_1y + ' %</li></ul>';
                     
-                    $('ul:nth-child(3)').html(stringDatos);
+                    $('input:last-child').after(stringDatos);
                 },
             error:function(){
                 $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
