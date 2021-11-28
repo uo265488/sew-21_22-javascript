@@ -14,21 +14,23 @@ section {
   color: #fff;
 }
 /*Especificidad: 001 */
-form {
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
+input {
+  font-size: large;
+}
+/*Especificidad: 001 */
+button {
+  font-size: large;
 }
 
 /*Especificidad: 003 */
 h1,
 h2,
-h3,
-h4 {
+h3 {
   color: #fff;
   background-color: #0a5a71;
   text-align: center;
   padding: 1em;
+  font-size: large;
 }
 /*Especificidad: 001 */
 p {
