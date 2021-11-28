@@ -30,28 +30,28 @@ class GestorWeb {
     }
 
     traducirTituloIngles() {
-        $("#titulo").text("Bill Gates, one of the biggest contributors to software development:");
+        $("h1").text("Bill Gates, one of the biggest contributors to software development:");
         
     }
 
     traducirTituloEspañol() {
-        $("#titulo").text("Bill Gates, uno de los mayores contribuyentes a la informática:");
+        $("h1").text("Bill Gates, uno de los mayores contribuyentes a la informática:");
     }   
 
     añadirFoto() {
-        $("#fotos").before('<img src="multimedia/BillGates.png" alt="Bill Gates."  />');
+        $('input[value="Añadir foto"]').before('<img src="multimedia/BillGates.png" alt="Bill Gates."  />');
     }
 
     borrarH3() {
         $('h3').remove();
     }
 
-    borrarH2() {
-        $('h2').remove();
+    borrarGestion() {
+        $('section:last-child').remove();
     }
 
     añadirBotonEliminarTodo() {
-        $("#borrarTodo").after('<input type="button" value="Borrar todo" onClick= gestor.borrarSecciones()>');
+        $('input[value="Añadir botón de eliminar secciones"]').after('<input type="button" value="Borrar todas las secciones" onClick= gestor.borrarSecciones()>');
     }
 
     borrarSecciones() {
@@ -80,7 +80,7 @@ class GestorWeb {
             numColumnas += 1;
         });
 
-        $("#recuento").after("<p> La tabla tiene " + numFilas + " filas y " 
+        $('input[value="Contar filas y columnas"]').after("<p> La tabla tiene " + numFilas + " filas y " 
         + String(numColumnas / numFilas) + " columnas. </p>")
     }
 }
