@@ -1,0 +1,40 @@
+/*Especificidad: 001 */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+/*Especificidad: 001 */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  background-color: #a02818;
+  color: #fff;
+}
+
+/*Especificidad: 003 */
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+  background-color: #0a5a71;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em;
+}
+/*Especificidad: 001 */
+p {
+  color: #fff;
+  padding: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+/** especificidad (0,1,1) **/
+input[type="submit"] {
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+}
