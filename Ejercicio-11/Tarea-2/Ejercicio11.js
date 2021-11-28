@@ -38,7 +38,7 @@ class Geolocalización {
         return this.altitud;
     }
     verTodo(dondeVerlo){
-        var ubicacion=document.getElementById(dondeVerlo);
+        var ubicacion=document.querySelector(dondeVerlo);
         var datos='<p>'+ this.mensaje + '</p>'; 
         datos+='<p>Longitud: '+this.longitud +' grados</p>'; 
         datos+='<p>Latitud: '+this.latitud +' grados</p>';
