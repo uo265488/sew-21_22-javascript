@@ -18,3 +18,13 @@
         },
         trackUserLocation: true
     }));
+
+    const geocoder = new MapboxGeocoder({
+        // Initialize the geocoder
+        accessToken: mapboxgl.accessToken, // Set the access token
+        mapboxgl: mapboxgl, // Set the mapbox-gl instance
+        marker: false // Do not use the default marker style
+      });
+      
+      // Add the geocoder to the map
+      map.addControl(geocoder);

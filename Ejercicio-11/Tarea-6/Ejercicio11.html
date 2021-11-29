@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <title>Display a map on a webpage</title>
@@ -7,15 +7,20 @@
         <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css" rel="stylesheet">
         <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js"></script>
 
+        <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+        <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+
         <link rel="stylesheet" type="text/css" href="Ejercicio11.css" />
     </head>
 <body>
 
     <header> 
-        <h1> Mapa dinámico con opción de obtener la posicion del usuario: </h1>
+        <h1> Mapa dinámico con opción de buscar localizaciones: </h1>
     </header>
     
-    <section id="map"></section>
+    <section id="map">
+        <h2> Mapa </h2>
+    </section>
     <script src="Ejercicio11.js"></script>
  
 </body>
