@@ -21,22 +21,31 @@
 
     <main id ="infoArchivos">
         <section>
+
+            <h2> Selección de archivos </h2>
             <p>Seleccione uno o varios archivos de texto: </p>
+
+            <label for="subirArchivos">Subir archivos: </label>
       
             <p><input id="subirArchivos" type="file" name="Archivos" onchange="reader.obtenerInformacionDelArchivo();"></p>
 
-            <button id="button" onclick="reader.añadirMarcadores()">Añadir marcadores del kml</button>
+            <button  onclick="reader.añadirMarcadores()">Añadir marcadores del kml</button>
 
         </section>
 
         
 
-        <section id="map"></section>
+        <section id="map">
+             <h2> Mapa</h2>
 
-        <section> <h2>Contenido del KML: </h2></section>
+        </section>
 
-        <section id="kml">
-            <h2></h2>
+        <section> 
+            <h2>Contenido del KML: </h2>
+        </section>
+
+        <section>
+            <h2>Kml: </h2>
             <p> Sube un archivo KML para visualizar la información. </p>
         </section>
         
