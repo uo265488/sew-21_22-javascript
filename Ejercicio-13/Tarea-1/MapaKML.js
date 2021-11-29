@@ -53,7 +53,7 @@ class MyFileReader {
                 //El evento "onload" se lleva a cabo cada vez que se completa con éxito una operación de lectura
                 //La propiedad "result" es donde se almacena el contenido del archivo
                 //Esta propiedad solamente es válida cuando se termina la operación de lectura
-                document.querySelector('section:last-child').innerHTML = lector.result;
+                document.querySelector('section:last-child').innerHTML = "Contenido del KML: " + lector.result;
             }      
             lector.readAsText(archivo);
         } else {
