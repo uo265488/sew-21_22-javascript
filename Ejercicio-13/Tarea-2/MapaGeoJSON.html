@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>API File: Leer un archivo de texto</title>
+
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js"></script>
+
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+        <link rel="stylesheet" type="text/css" href="MapaGeoJSON.css" />
+</head>
+<body>
+    <header>
+        <h1>Lectura de archivo GeoJSON y representación en mapa: </h1>
+    </header>
+
+    <main id ="infoArchivos">
+        <section>
+            <p>Seleccione un archivo de texto: </p>
+      
+            <p><input id="subirArchivos" type="file" name="Archivos" onchange="reader.obtenerInformacionDelArchivo();"></p>
+
+            <button id="button" onclick="reader.añadirMarcadores()">Añadir marcadores del GeoJSON</button>
+
+        </section>
+
+        <section id="map"></section>
+
+        <section>
+             <h2>Contenido del MKL: </h2>
+        </section>
+
+        <section id="kml">
+            <h2></h2>
+            <p> Sube un archivo KML para visualizar la información. </p>
+        </section>
+     
+    </main>
+
+    <script src="MapaGeoJSON.js"></script>
+
+</body>
+</html>

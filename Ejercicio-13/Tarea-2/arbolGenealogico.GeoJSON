@@ -1,0 +1,170 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -6.72305555556,43.5411111111 ]
+		},
+		"properties": {
+		    "name": "Oscar Perez Arruñada",
+			"gender": "Male"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -7.08972222222,43.3563888889 ]
+		},
+		"properties": {
+		  "name": "Carmen Arruñada Martinez",
+			 "gender": "Female"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -5.8262014,43.3151619 ]
+		},
+		"properties": {
+		  "name": "Jose Ignacio Perez Velasco",
+		  "gender": "Male"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -6.64611111111,43.5641666667 ]
+		},
+		"properties": {
+		  "name": "Jose Manuel Velasco",
+			 "gender": "Male"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -7.1125,43.3444444444 ]
+		},
+		"properties": {
+		  "name": "Victoria Arruñada",
+		  "gender": "Female"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -6.72305555556,43.5411111111 ]
+		},
+		"properties": {
+		    "name": "Oscar Perez Arruñada",
+			"gender": "Male"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -7.08972222222,43.3563888889 ]
+		},
+		"properties": {
+		  "name": "Carmen Arruñada Martinez",
+			 "gender": "Female"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -5.8262014,43.3151619 ]
+		},
+		"properties": {
+		  "name": "Jose Ignacio Perez Velasco",
+		  "gender": "Male"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -6.64611111111,43.5641666667 ]
+		},
+		"properties": {
+		  "name": "Jose Manuel Velasco",
+			 "gender": "Male"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -7.1125,43.3444444444 ]
+		},
+		"properties": {
+		  "name": "Victoria Arruñada",
+		  "gender": "Female"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -6.72305555556,43.5411111111 ]
+		},
+		"properties": {
+		    "name": "Oscar Perez Arruñada",
+			"gender": "Male"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -7.08972222222,43.3563888889 ]
+		},
+		"properties": {
+		  "name": "Carmen Arruñada Martinez",
+			 "gender": "Female"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -5.8262014,43.3151619 ]
+		},
+		"properties": {
+		  "name": "Jose Ignacio Perez Velasco",
+		  "gender": "Male"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -6.64611111111,43.5641666667 ]
+		},
+		"properties": {
+		  "name": "Jose Manuel Velasco",
+			 "gender": "Male"
+		}
+	  },
+	  {
+		"type": "Feature",
+		"geometry": {
+		  "type": "Point",
+		  "coordinates": [ -7.1125,43.3444444444 ]
+		},
+		"properties": {
+		  "name": "Victoria Arruñada",
+		  "gender": "Female"
+		}
+	  }
+	]
+}

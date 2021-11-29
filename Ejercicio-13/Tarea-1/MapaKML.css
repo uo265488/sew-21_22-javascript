@@ -1,0 +1,19 @@
+/** Especificidad 001 */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+/** Especificidad 001 */
+section {
+    text-align: center;
+    padding: 1em;
+}
+
+/** Especificidad 001 */
+#map {
+  height: 50em;
+  width: auto;
+}
