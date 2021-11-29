@@ -16,7 +16,7 @@ class MyFileReader {
 
     añadirMarcadores() {
 
-        var objeto = JSON.parse(document.getElementById("kml").innerText);
+        var objeto = JSON.parse(document.querySelector('p:last-child').innerText);
 
         for(var i = 0; i < objeto.features.length; i++) {
 
@@ -41,13 +41,14 @@ class MyFileReader {
     }
 
     leerArchivo(archivo) {
-        var lector = new FileReader();
-        lector.onload = function (evento) {
+   
+            var lector = new FileReader();
+            lector.onload = function (evento) {
 
-            document.getElementById("kml").innerText = lector.result;
+                document.querySelector('p:last-child').innerText = lector.result;
             
-        }      
-        lector.readAsText(archivo);
+            }      
+            lector.readAsText(archivo);
     
     }
 }
