@@ -1,0 +1,25 @@
+/*Especificidad: 001 */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+/*Especificidad: 003 */
+section {
+  color: #fff;
+  background-color: #0a5a71;
+  padding: 1em;
+}
+
+/*Especificidad: 003 */
+h1 {
+  color: #fff;
+  background-color: #0a5a71;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+/*Especificidad: 001 */
+p {
+  color: white;
+}

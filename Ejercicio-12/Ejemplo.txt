@@ -1,0 +1,3 @@
+Hola, me llamo Óscar y estoy trabajando mucho para aprobar esta asignatura.
+JavaScript era un lenguaje de programación que tenía muchas ganas de aprender
+ya que se pide en la mayoría de trabajos relacionados con el front-end.
