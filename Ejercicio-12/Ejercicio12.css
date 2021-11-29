@@ -21,5 +21,6 @@ h1 {
 
 /*Especificidad: 001 */
 p {
-  color: white;
+  color: black;
+  background-color: white;
 }
