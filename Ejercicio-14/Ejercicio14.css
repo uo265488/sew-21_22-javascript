@@ -10,6 +10,13 @@ body {
   section {
       text-align: center;
       padding: 1em;
+      display: flex;
+      flex-direction: column;
+      column-gap: 2em;
+      row-gap: 2em;
+      padding: 2em;
+      
+
   }
   
   /** Especificidad 001 */
@@ -18,20 +25,3 @@ body {
     width: auto;
   }
 
-  .distance-container {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 1;
-    }
-     
-    .distance-container > * {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 11px;
-    line-height: 18px;
-    display: block;
-    margin: 0;
-    padding: 5px 10px;
-    border-radius: 3px;
-    }
