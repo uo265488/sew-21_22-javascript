@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>API File: Leer un archivo de texto</title>
+
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+        <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js'></script>
+        <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css' type='text/css'/>  
+        <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script src="Ejercicio14.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="Ejercicio14.css" />
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    crossorigin=""></script>
+</head>
+<body>
+    
+
+    <header>
+        <h1>Mapa dinámico con medición de distancias a partir de la ubicación del dispositivo:</h1>
+    </header>
+
+    <main >
+
+        <h2> Distancia:</h2>
+
+        <h3>Distance:</h3>
+
+        <section id ="map"> 
+            <h2> Mapa: </h2>
+
+            <p> Suba un fichero con las coordenadas por las que quiere trazar la distancia y clicke en el punto definitivo de esta.</p>
+        </section>
+        
+        <section>
+
+            <h2> Subir un archivo kml o xml con coordenadas: </h2>
+
+            <p>Seleccione el archivo que quiere subir: </p>
+
+            <label for="subirArchivos"> Subir archivo: </label>
+      
+            <p><input id="subirArchivos" type="file" name="Archivos" onchange="reader.obtenerInformacionDelArchivo();"></p>
+
+            <button  onclick="reader.fullScreen()">Full screen map</button>
+
+            <button  onclick="reader.generarMapa()"> Generar mapa </button>
+
+        </section>
+
+        <section> 
+
+            <h2> Contenido del fichero</h2>
+
+            <p> Aquí se mostrará el contenido del archivo. </p>
+
+        </section>
+
+        
+    </main>
+
+    
+
+</body>
+</html>
