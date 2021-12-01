@@ -9,7 +9,7 @@ class MyFileReader {
     }
 
     obtenerInformacionDelArchivo() {
-        var archivo = document.getElementById("subirArchivos").files;
+        var archivo = document.querySelector("input[type='file']").file;
 
         this.leerArchivo(archivo[0]);
     }
@@ -44,7 +44,6 @@ class MyFileReader {
     }
 
     leerArchivo(archivo) {
-        //Solamente admite archivos de tipo texto
         var tipoTexto = /text.*/;
         if (archivo.type.match(tipoTexto)) 
         {

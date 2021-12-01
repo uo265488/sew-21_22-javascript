@@ -9,7 +9,7 @@ class MyFileReader {
     }
 
     obtenerInformacionDelArchivo() {
-        var archivo = document.getElementById("subirArchivos").files;
+        var archivo = document.querySelector("input[type='file']").files;
 
         this.leerArchivo(archivo[0]);
     }
