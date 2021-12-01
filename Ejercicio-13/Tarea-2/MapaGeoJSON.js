@@ -5,11 +5,11 @@ class MyFileReader {
     constructor() {
         this.map = document.getElementById("map");
 
-        this.generarMapa();
+
     }
 
     obtenerInformacionDelArchivo() {
-        var archivo = document.querySelector("input[type='file']").files;
+        var archivo = document.getElementById("subirArchivos").files;
 
         this.leerArchivo(archivo[0]);
     }

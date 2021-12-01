@@ -13,16 +13,22 @@
 
 
         <link rel="stylesheet" type="text/css" href="MapaKML.css" />
+
+        <script src="MapaKML.js"></script>
 </head>
 <body>
     <header>
         <h1>API File: Leer archivos de texto situados en la máquina cliente</h1>
     </header>
 
-    <main >
+    <main id ="infoArchivos">
         <section>
 
             <h2> Selección de archivos </h2>
+
+            <button  onclick="reader.generarMapa()">Iniciar mapa</button>
+
+
             <p>Seleccione uno o varios archivos de texto: </p>
 
             <label for="subirArchivos">Subir archivos: </label>
@@ -48,7 +54,7 @@
         
     </main>
 
-    <script src="MapaKML.js"></script>
+   
 
 </body>
 </html>

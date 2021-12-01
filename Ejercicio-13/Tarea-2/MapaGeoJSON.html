@@ -13,16 +13,21 @@
 
 
         <link rel="stylesheet" type="text/css" href="MapaGeoJSON.css" />
+        <script src="MapaGeoJSON.js"></script>
 </head>
 <body>
     <header>
         <h1>Lectura de archivo GeoJSON y representación en mapa: </h1>
     </header>
 
-    <main>
+    <main id ="infoArchivos">
         <section>
             <h2> Selección de archivos </h2>
+
+            <button onclick="reader.generarMapa()">Iniciar mapa</button>
+
             <p>Seleccione uno o varios archivos de texto: </p>
+
 
             <label for="subirArchivos">Subir archivos: </label>
       
@@ -43,7 +48,7 @@
      
     </main>
 
-    <script src="MapaGeoJSON.js"></script>
+
 
 </body>
 </html>
